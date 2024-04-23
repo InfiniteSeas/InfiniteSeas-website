@@ -179,9 +179,15 @@ nav a .twitter-logo {
   }
 
   .body-content {
-    max-width: 65vw; 
+    max-width: 68vw; 
     padding: 15px;
   }
+
+  .logo-text-image {
+    margin-top: 60px;
+  }
+
+
 }
 
 
