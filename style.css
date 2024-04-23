@@ -1,0 +1,194 @@
+/* Font-face declarations */
+@font-face {
+  font-family: 'regular-infinite-seas';
+  src: url('./fonts/IMFellDoublePica-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'italic-infinite-seas';
+  src: url('./fonts/IMFellDoublePica-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; 
+}
+
+/* Universal styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'regular-infinite-seas', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  font-family: 'regular-infinite-seas', Arial, sans-serif;
+  color: #fae8c9; 
+  background-color: #112378;
+}
+
+/* Navigation styles */
+nav {
+  height: 80px;
+  background: #112378;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo-symbol {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'regular-infinite-seas', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #fae8c9;
+  margin-left: 5px;
+  font-style: italic;
+}
+
+.logo-text-image {
+  display: block;
+  max-width: 60%;
+  height: auto;
+  margin: 20px auto 10px; /* Centered horizontally with a margin */
+}
+
+nav a, .signup-button {
+  text-decoration: none;
+  color: #fae8c9;
+  padding: 0 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.signup-button:hover {
+  color: #000;
+  background: #fae8c9;
+}
+
+.signup-button {
+  font-family: 'regular-infinite-seas', Arial, sans-serif;
+  color: #fae8c9;
+  background-color: transparent;
+  border: 2px solid #fae8c9;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  transition: background-color 0.5s ease;
+  display: inline-block;
+  min-width: 180px;
+  min-height: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/* Body content styles */
+.body-content {
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+p {
+  font-family: 'regular-infinite-seas', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+  font-style: normal;
+  margin-bottom: 20px; /* Increase margin between paragraphs */
+}
+
+p + p {
+  margin-top: 20px; /* Additional margin between adjacent paragraphs */
+}
+
+/* Hero section styles */
+.hero-container {
+  position: relative;
+  background-image: url('./first_call_v2.png');
+  background-size: 70vw auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
+  margin-top: 30px;
+}
+
+nav a .twitter-logo {
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  display: inline-block;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+
+/* .custom-twitter-button a {
+  display: inline-block;
+  text-decoration: none;
+} */
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-items {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .signup-button, nav a {
+      padding: 10px;
+      text-align: center;
+      font-size: 10px;
+      width: 80%;
+    }
+  .signup-button {
+    min-width: 20px; 
+    margin-top: 50px;
+    }
+
+  .logo-text {
+    margin-right: 5px;
+    font-size: 1.2rem;
+  }
+
+  .body-content {
+    max-width: 65vw; 
+    padding: 15px;
+  }
+}
+
+
+html, body {
+  height: 150vh;  /* 100% of the viewport height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrolling */
+}
+
