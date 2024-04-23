@@ -189,6 +189,5 @@ html, body {
   height: 150vh;  /* 100% of the viewport height */
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevents scrolling */
 }
 
