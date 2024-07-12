@@ -119,6 +119,11 @@ p + p {
   margin-top: 20px; /* Additional margin between adjacent paragraphs */
 }
 
+.colored-link {
+  color: #F6E3A1;
+}
+
+
 /* Hero section styles */
 .hero-container {
   position: relative;
